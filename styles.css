@@ -1,0 +1,570 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* Navigation */
+nav {
+  background: #1a1a1a;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f60;
+}
+
+nav ul li a.book-now {
+  background: #f60;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+nav ul li a.book-now:hover {
+  background: #e55;
+  color: #fff;
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  background: #000;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.video-section .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.video-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.video-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.video-section .book-now {
+  display: inline-block;
+  background: #f60;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.video-section .book-now:hover {
+  background: #e55;
+}
+
+/* General Section Styling */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+#services .stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#services .stats p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Booking Platform */
+.booking-platform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.booking-platform div {
+  max-width: 250px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.booking-platform h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.booking-platform a {
+  color: #f60;
+  text-decoration: none;
+}
+
+.booking-platform a:hover {
+  text-decoration: underline;
+}
+
+/* Booking Form */
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.booking-form h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 15px;
+  background: #f60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.booking-form button:hover {
+  background: #e55;
+}
+
+.booking-form .security {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Why Choose Urbango */
+.why-choose {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.why-choose h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.why-choose p {
+  font-size: 16px;
+}
+
+.why-choose a {
+  color: #f60;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.why-choose a:hover {
+  text-decoration: underline;
+}
+
+/* Booking Confirmation */
+.confirmation {
+  text-align: center;
+}
+
+.confirmation button {
+  background: #f60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmation button:hover {
+  background: #e55;
+}
+
+/* Fleet Section */
+.fleet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fleet-item {
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.fleet-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.fleet a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f60;
+  text-decoration: none;
+}
+
+.fleet a:hover {
+  text-decoration: underline;
+}
+
+/* Itineraries Section */
+.itineraries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.itinerary-item {
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.itinerary-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.itinerary-item ul {
+  list-style: disc;
+  margin: 10px 0 10px 20px;
+}
+
+.itineraries a {
+  color: #f60;
+  text-decoration: none;
+}
+
+.itineraries a:hover {
+  text-decoration: underline;
+}
+
+/* News Section */
+.news a {
+  color: #f60;
+  text-decoration: none;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+
+/* Partner Section */
+.partner {
+  text-align: center;
+}
+
+.partner div {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.partner a {
+  background: #f60;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.partner a:hover {
+  background: #e55;
+}
+
+/* App Store Section */
+.app-store {
+  text-align: center;
+}
+
+.app-store a {
+  margin: 10px;
+  color: #f60;
+  text-decoration: none;
+}
+
+.app-store a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+footer a:hover {
+  color: #f60;
+}
+
+/* Enquiry Form */
+.enquiry-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.enquiry-form button {
+  width: 100%;
+  padding: 15px;
+  background: #f60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enquiry-form button:hover {
+  background: #e55;
+}
+
+/* AI Assistant (Basic Styling) */
+.ai-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  display: none;
+}
+
+.ai-assistant.active {
+  display: block;
+}
+
+.ai-assistant h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ai-assistant ul {
+  list-style: none;
+}
+
+.ai-assistant ul li {
+  margin: 5px 0;
+}
+
+.ai-assistant ul li a {
+  color: #f60;
+  text-decoration: none;
+}
+
+.ai-assistant ul li a:hover {
+  text-decoration: underline;
+}
+
+.ai-assistant a.whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.ai-assistant a.whatsapp:hover {
+  background: #20b858;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .video-section {
+    padding: 80px 0;
+  }
+
+  .video-section h1 {
+    font-size: 32px;
+  }
+
+  .video-section p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  .fleet,
+  .itineraries,
+  .booking-platform,
+  #services .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fleet-item,
+  .itinerary-item,
+  .booking-platform div {
+    max-width: 100%;
+  }
+
+  .video-section video {
+    height: 100%;
+  }
+
+  /* Ensure no element exceeds viewport */
+  * {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section h1 {
+    font-size: 24px;
+  }
+
+  .video-section p {
+    font-size: 14px;
+  }
+
+  .booking-form,
+  .enquiry-form {
+    padding: 15px;
+  }
+
+  .ai-assistant {
+    max-width: 250px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
